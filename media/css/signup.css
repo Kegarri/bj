@@ -1,0 +1,317 @@
+@font-face {
+    font-family: DroidSans; /* Имя шрифта */
+    src: url(../login/libs/fonts/DroidSans_0.ttf); /* Путь к файлу со шрифтом */
+   }
+body, .login-submit, .login-submit:before, .login-submit:after {
+  background: #373737 url("libs/img/bg.png") 0 0 repeat;
+}
+body{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+a{
+  color: #fff;
+ }
+a:hover{
+ text-decoration: none;
+}
+.container{
+width: 450px;
+background-color: rgba(24, 33, 52, 0.7);
+margin: 8% auto 10px auto;
+text-align: center;
+box-shadow: 0 -5px 0 #3adbfd;
+padding-bottom: 20px;
+}
+.container img{
+ width:120px;
+ height:120px;
+ margin: -60px 0 30px 0;
+ border: 5px solid #1a394f;
+ border-radius: 50%;
+ box-shadow: 0 -5px 0 #3adbfd;
+}
+#form{
+
+}
+@keyframes sliderwidth{
+	0%{width: 1px;}
+	10%{width: 30px;}
+	20%{width: 60px;}
+	30%{width: 90px;}
+	40%{width: 120px;}
+	50%{width: 150px;}
+	60%{width: 180px;}
+	70%{width: 210px;}
+	80%{width: 240px;}
+	90%{width: 270px;}
+	100%{width: 300px;}
+}
+@keyframes slider{
+	0%{height: 0px;}
+	2.5%{height: 1px;}
+	5%{height: 2px;}
+	7.5%{height: 3px;}
+	10%{height: 4px;}
+	12.5%{height: 5px;}
+	15%{height: 6px;}
+	17.5%{height: 7px;}
+	20%{height: 8px;}
+	22.5%{height: 9px;}
+	25%{height: 10px;}
+	27.5%{height: 11px;}
+	30%{height: 12px;}
+	32.5%{height: 13px;}
+	35%{height: 14px;}
+	37.5%{height: 15px;}
+	40%{height: 16px;}
+	42.5%{height: 17px;}
+	45%{height: 18px;}
+	47.5%{height: 19px;}
+	50%{height: 20px;}
+	52.5%{height: 21px;}
+	55%{height: 22px;}
+	57.5%{height: 23px;}
+	60%{height: 24px;}
+	62.5%{height: 25px;}
+	65%{height: 26px;}
+	67.5%{height: 27px;}
+	70%{height: 28px;}
+	72.5%{height: 29px;}
+	75%{height: 30px;}
+	77.5%{height: 31px;}
+	80%{height: 32px;}
+	82.5%{height: 33px;}
+	85%{height: 34px;}
+	87.5%{height: 35px;}
+	90%{height: 36px;}
+	92.5%{height: 37px;}
+	95%{height: 38px;}
+	97.5%{height: 39px;}
+	100%{height: 40px;}
+}
+@keyframes sliderup{
+	0%{height: 40px;}
+	2.5%{height: 39px;}
+	5%{height: 38px;}
+	7.5%{height: 37;}
+	10%{height: 36px;}
+	12.5%{height: 35px;}
+	15%{height: 34px;}
+	17.5%{height: 33px;}
+	20%{height: 32px;}
+	22.5%{height: 31px;}
+	25%{height: 30px;}
+	27.5%{height: 29px;}
+	30%{height: 28px;}
+	32.5%{height: 27px;}
+	35%{height: 26px;}
+	37.5%{height: 25px;}
+	40%{height: 24px;}
+	42.5%{height: 23px;}
+	45%{height: 22px;}
+	47.5%{height: 21px;}
+	50%{height: 20px;}
+	52.5%{height: 19px;}
+	55%{height: 18px;}
+	57.5%{height: 17px;}
+	60%{height: 16px;}
+	62.5%{height: 15px;}
+	65%{height: 14px;}
+	67.5%{height: 13px;}
+	70%{height: 12px;}
+	72.5%{height: 11px;}
+	75%{height: 10px;}
+	77.5%{height: 9px;}
+	80%{height: 8px;}
+	82.5%{height: 7px;}
+	85%{height: 6px;}
+	87.5%{height: 5px;}
+	90%{height: 4px;}
+	92.5%{height: 3px;}
+	95%{height: 2px;}
+	97.5%{height: 1px;}
+	100%{height: 0px;}
+}
+
+input[type=text], input[type=password], input[type=email] {
+	animation: slider 0.5s;
+	font-family: DroidSans;
+	font-size: 13px;
+	width: 300px;
+	margin-top: 10px;
+	padding: 0 40px;
+	height: 40px;
+	color: #bbb;
+	text-shadow: 1px 1px 1px black;
+	background: rgba(0, 0, 0, 0.16);
+	border: 0;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+	transition: text-indent 0.3s ease-in-out, box-shadow 1.3s 0s;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus{
+	box-shadow: inset 0 0 6px 30px rgba(58, 219, 253, 0.35);
+	outline:none;
+	text-indent: 12px;
+}
+input[id=password_2]{
+	border-left: 1px solid #6ee9fd;
+	border-right: 1px solid #6ee9fd;
+}
+#password_2[target=_self]{
+	transition: border 0.5s;
+    border-right: 1px solid red;
+    border-left: 1px solid red;
+}
+.dws-submit {
+	animation: slider 0.5s;
+	width: 300px;
+	height: 45px;
+	/*padding: 13px 30px;*/
+	margin: 10px 0 20px 0;
+	font-size: 15px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.16);
+	/* background-color: #2ca8c6; */
+	border: none;
+	border-bottom: 2px solid #6ee9fd;
+	border-radius: 0 0 5px 5px;
+	cursor: pointer;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+	transition: all 0.5s;
+	outline:none;
+}
+.dws-submit:hover{
+    transition: all 0.5s;
+    background: #2c536c;
+    color: #6ee9fd;
+}
+.dws-submit[disabled]{
+	animation: sliderup 0.5s;
+	transition: all 0.5s;
+    border-style: none;
+    color: white;
+    cursor: not-allowed;
+    border-left: 2px solid #960000;
+    border-right: 2px solid #960000;
+    }
+.dws-submit[disabled]:hover{
+    background: rgba(0, 0, 0, 0.16);
+}
+.dws-cencel {
+	animation: slider 0.5s;
+	width: 300px;
+	height: 40px;
+	/*padding: 13px 30px;*/
+	margin: 10px 0 20px 0;
+	font-size: 15px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.16);
+	/* background-color: #2ca8c6; */
+	border: none;
+	border-bottom: 2px solid #FFA500;
+	border-radius: 0 0 5px 5px;
+	cursor: pointer;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+	transition: box-shadow 1.3s, color 1.5s;
+	outline:none;
+}
+.dws-cencel:hover{
+    box-shadow: inset 0 0 6px 30px rgba(117, 58, 0, 0.35);
+    color: #FFA500;
+}
+.dws-cencel[disabled]{
+	animation: sliderup 0.5s;
+	transition: all 0.5s;
+    border-style: none;
+    color: white;
+    cursor: not-allowed;
+    border-left: 2px solid #960000;
+    border-right: 2px solid #960000;
+    }
+.dws-cencel[disabled]:hover{
+    background: rgba(0, 0, 0, 0.16);;
+}
+
+#login{
+
+}
+
+.dws-input{
+	width: min-content;
+	transition: all 0.5s;
+}
+i.fa::before{
+ font-family: "FontAwesome";
+ position: absolute;
+ font-size: 30px;
+ padding: 15px 0 0 10px;
+ color: #2c536c;
+}
+i#fa-user::before{
+font-size: 22px;
+padding-top: 20px;
+}
+i#fa-email::before{
+font-size: 22px;
+padding-top: 19px;
+}
+
+i.fa:hover::before{
+ color: #319ebc;
+ transition: all 0.3s;
+}
+.dws-social i{
+ color: #fff;
+ font-size: 20px;
+ width: 20px;
+ padding: 10px;
+}
+.dws-social i:hover{
+ background-color: #fff;
+ color: #1a394f;
+ border-radius: 5px;
+ cursor: pointer;
+}
+.cbalink{
+    visibility: hidden;
+    text-align: center;
+    font-size: 11px;
+    position: fixed;
+}
+  .cbalink{
+  visibility: hidden;
+  text-align: center;
+  font-size: 11px;
+  position: fixed;
+}
+
+/*i.fa {
+  width: 26px;
+  font-size: 20px;
+  height: 26px;
+  line-height: 63px;
+  text-align: center;
+  margin-right: -28px;
+  position: relative;
+  color: #2c536c;
+  z-index: 1;
+  float: left;
+}
+
+i.fa + input {
+  padding-left: 26px;
+}

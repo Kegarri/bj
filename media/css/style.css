@@ -1,0 +1,139 @@
+/* вывод авторизованного пользователя */
+
+#user_info{
+	color: #bbb;
+    padding: 15px;
+    width: 200px;
+    height: 100px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+}
+
+/* фон */
+body{
+	background: #373737 url(../images/bg.png) 0 0 repeat;;
+    color: #bbb;
+}
+
+/* таблица */
+table.sort{
+	border-spacing:0.1em;
+	margin-bottom:1em;
+	margin-top:1em
+}
+
+/* ячейки таблицы */
+table.sort td{
+	/*border:1px solid #CCCCCC;*/
+	padding:0.3em 1em;
+	background: rgba(0, 0, 0, 0.16);
+    color: #bbb;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+}
+
+/* заголовки таблицы */
+table.sort thead td{
+	cursor:pointer;
+	cursor:hand;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle
+}
+
+/* заголовок отсортированного столбца */
+table.sort thead td.curcol{
+	padding: 5px;
+	background-color:rgba(1, 1, 1, 0.39);
+	color:#FFFFFF
+}
+
+#select_task{
+	width: 100%;
+    height: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    background: rgba(1, 1, 1, 0.39);
+    color: #bbb;
+    border-style: none;
+    outline: none;
+    text-align: center;
+}
+
+#select_checked{
+	width: 100%;
+    height: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    background: rgba(1, 1, 1, 0.39);
+    color: #bbb;
+    border-style: none;
+    outline: none;
+}
+
+#name{
+	background: none;
+    border: none;
+    color: #bbb;
+    text-indent: 15px;
+}
+
+#email{
+	background: none;
+    border: none;
+    color: #bbb;
+    text-indent: 15px;
+}
+
+#new_task{
+    background: rgba(1, 1, 1, 0.39);
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    padding: 7px 10px;
+    outline: none;
+    color: #bbb;
+    transition: text-indent 0.3s ease-in-out, border-color 0.4s, border-width 0.4s 0.1s;
+}
+
+#new_task:focus{
+  outline:none;
+  text-indent: 12px;
+  /*border-left: solid 1px cyan;*/
+}
+
+#cell_buttons{
+	padding: 0;
+	box-shadow: none;
+	background: none;
+	border: none;
+}
+
+#submit{
+	width: 33.3%;
+    background: rgba(1, 1, 1, 0.69);
+    padding: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    color: #bbb;
+    outline: none;
+    cursor: pointer;
+    box-shadow: inset 1px 1px 0 rgba(255,255,255,0.4);
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#submit:hover{
+	background: rgba(1, 1, 1, 1);
+	box-shadow: none;
+}
+
+#table_error{
+	text-align: center;
+	background: rgba(255, 0, 0, 0.26);	
+}
+
+#table_complete{
+	text-align: center;
+	background: rgba(0, 150, 0, 0.26);
+}
